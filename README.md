@@ -1,8 +1,11 @@
 def hangman():
+
     # List of words that should be guessed 
+    
     words = ["list", "programming", "incorrect","information", "development", "challenge", "technology"]
     
     # Randomly select a word
+    
     word = random.choice(words).lower()
     letters = set(word)  # Unique letters in the word
     guessed_letters = set()
